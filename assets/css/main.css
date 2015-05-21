@@ -2752,7 +2752,41 @@
 
 
 
+/****************************************************/
+/* ABOUT SECTION */
+/****************************************************/
 
+#profile-img {
+	float: left;
+	margin-right: 40px;
+}
+
+#about p {
+	text-align: left;
+}
+
+@media screen and (max-width: 980px) {
+	#profile-img {
+		float: none;
+		margin-right: 0;
+	}
+
+	#about p {
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#profile-img {
+		float: none;
+		margin-right: 0;
+		width: 50%;
+	}
+
+	#about p {
+		text-align: justify;
+	}
+}
 
 
 
