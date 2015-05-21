@@ -2684,18 +2684,16 @@
 /* Header */
 
 #header{
-	width:50em;
+	width: 100%;
 	height:115px;
-	/*background-color:#222222;*/
-	/*padding:0px 43px;*/
 	position: fixed;
 	top:0px;
-	margin: auto;
 	z-index: 100;
 }
 #header #main-menu{
-	padding-top:30px;
-	padding-left: 0;
+	width: 22.7em;
+	margin: auto;
+	padding: 1.5em 0;
 }
 #header #main-menu li{
 	float:left;
