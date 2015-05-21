@@ -82,15 +82,15 @@
 	}
 
 	.container {
-		width: 35em;
+		width: 50em;
 	}
 
 	@media screen and (max-width: 1680px) {
 
 		.container.\31 25\25 {
 			width: 100%;
-			max-width: 43.75em;
-			min-width: 35em;
+			max-width: 50em;
+			min-width: 50em;
 		}
 
 		.container.\37 5\25 {
@@ -106,7 +106,7 @@
 		}
 
 		.container {
-			width: 35em;
+			width: 50em;
 		}
 
 	}
@@ -1355,8 +1355,8 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #8cd1a8;
+		/*border-bottom: dotted 1px;*/
+		color: white;
 		text-decoration: none;
 	}
 
@@ -1479,6 +1479,12 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	.clearfix:after {
+		display: block;
+		clear: both;
+		content: '';
 	}
 
 /* Loader */
@@ -2678,37 +2684,36 @@
 /* Header */
 
 #header{
-	width:864px;
+	width:50em;
 	height:115px;
 	/*background-color:#222222;*/
-	padding:0px 43px;
+	/*padding:0px 43px;*/
 	position: fixed;
 	top:0px;
-	left:50%;
-	margin: 0 0 0 -475px;
+	margin: auto;
 	z-index: 100;
 }
-#header #logo{
-	padding-top:14px;
-	margin-left: 0px;
-	float:left;
+#header #main-menu{
+	padding-top:30px;
+	padding-left: 0;
 }
-#header #logo-title{
-	padding-top:40px;
-	margin-left: 20px;
-	float:left;
-	font: 400 45px/25px 'Bree Serif', Georgia, serif; color:#6a6969;
-}
-#header #main-menu{float:left; padding-top:45px;}
 #header #main-menu li{
 	float:left;
 	list-style:none;
 	margin-left:27px;
-	font: 400 16px/20px 'Bree Serif', Georgia, serif;
+	font-weight: 400;
+	padding: 0;
 }
 
+@media screen and (max-width: 736px) {
+	#header #main-menu li {
+	  font-size: 0.75em;
+	}
+}
 
-
+#header #main-menu li:first-of-type{
+	margin-left:0;
+}
 
 
 
@@ -2769,7 +2774,7 @@
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
 			left: 50%;
-			margin-left: -17.5em;
+			margin-left: -25em;
 			padding: 2.5em;
 			position: absolute;
 		}
