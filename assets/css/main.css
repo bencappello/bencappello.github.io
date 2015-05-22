@@ -2687,10 +2687,10 @@
 	position: fixed;
 	top:0px;
 	z-index: 100;
-	transition: background 0.6s;
+	transition: background 0.6s, height 0.6s;
 }
 #header #main-menu{
-	width: 28em;
+	width: 29em;
 	margin: auto;
 	padding: 1.5em 0;
 }
@@ -2739,7 +2739,7 @@
 	}
 
 	#header #main-menu{
-		width: 21em;
+		width: 22em;
 		padding: 0.75em 0;
 	}
 
