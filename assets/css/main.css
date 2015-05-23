@@ -2862,19 +2862,19 @@
 
 
 	/****************************************************/
-	/* ABOUT SECTION */
+	/* SKILLS SECTION */
 	/****************************************************/
 
 	.skills-container {
 		width: 740px;
 		margin: auto;
 	}
-	.icon {
+	.badge {
 		float: left;
 		margin-right: 60px;
 		margin-bottom: 40px;
 	}
-	.icon img {
+	.badge img {
 		width: 100px;
 		max-height: 100px;
 	}
