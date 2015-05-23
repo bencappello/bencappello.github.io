@@ -2762,7 +2762,7 @@
 	margin-right: 40px;
 }
 
-#about p {
+#one p {
 	text-align: left;
 }
 
@@ -2772,7 +2772,7 @@
 		margin-right: 0;
 	}
 
-	#about p {
+	#one p {
 		text-align: justify;
 	}
 }
@@ -2784,7 +2784,7 @@
 		width: 50%;
 	}
 
-	#about p {
+	#one p {
 		text-align: justify;
 	}
 }
@@ -2858,6 +2858,35 @@
 			#title .container .button {
 				min-width: 12em;
 			}
+
+
+
+	/****************************************************/
+	/* ABOUT SECTION */
+	/****************************************************/
+
+	.skills-container {
+		width: 740px;
+		margin: auto;
+	}
+	.icon {
+		float: left;
+		margin-right: 60px;
+		margin-bottom: 40px;
+	}
+	.icon img {
+		width: 100px;
+		max-height: 100px;
+	}
+	#three .last{margin:0px;}
+	#three .bottom{margin-bottom:0px;}
+
+
+
+
+
+
+
 
 /* Footer */
 
