@@ -2687,12 +2687,13 @@
 	position: fixed;
 	top:0px;
 	z-index: 100;
-	transition: background 0.6s, height 0.6s;
+	transition: background 0.6s;
 }
 #header #main-menu{
 	width: 29em;
 	margin: auto;
-	padding: 1.5em 0;
+	padding: 0.3em 0;
+	transition: padding 0.6s;
 }
 #header #main-menu li{
 	float:left;
@@ -2702,10 +2703,6 @@
 	padding: 0;
 }
 
-#header.sticky-bar a {
-	transition: color 0.6s;
-}
-
 #logo {
 	height: 4em;
 	position: absolute;
@@ -2713,6 +2710,16 @@
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+
+#header.sticky-bar #main-menu {
+	padding: 1em 0;
+}
+
+#header.sticky-bar a {
+	transition: color 0.6s;
+}
+
 
 #header #main-menu li:first-of-type{
 	margin-left:0;
@@ -2728,7 +2735,7 @@
 
 @media screen and (max-width: 980px) {
 	#logo {
-		top: 16.2em;
+		top: 9.7em;
 	}
 }
 
@@ -2745,7 +2752,7 @@
 
 	#logo {
 		height: 2em;
-		top: 15.45em;
+		top: 4.85em;
 	}
 }
 
@@ -2806,6 +2813,7 @@
 
 		#title header {
 			color: rgba(255, 255, 255, 0.5);
+			position: relative;
 			display: inline-block;
 			padding-bottom: 8em;
 			vertical-align: middle;
