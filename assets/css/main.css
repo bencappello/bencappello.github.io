@@ -2697,13 +2697,13 @@
 	padding: 0;
 }
 
-#logo {
+/*#logo {
 	height: 4em;
 	position: absolute;
 	top: 9.8em;
 	left: 50%;
 	transform: translateX(-50%);
-}
+}*/
 
 
 #header.sticky-bar #main-menu {
@@ -2833,7 +2833,7 @@
 			}
 
 				#title header h1:after {
-					margin-top: 0.5em;
+					margin-top: 0.3em;
 				}
 
 			#title header p {
