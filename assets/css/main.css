@@ -2266,7 +2266,7 @@
 				}
 
 				ul.icons li .icon:before {
-					font-size: 1.5em;
+					font-size: 2em;
 				}
 
 		ul.icons-grid {
@@ -2949,7 +2949,7 @@ a.inline-link {
 		.description-container {
 			max-height: 1px;
 			width: 100%;
-			padding: 0.6em;
+			padding: 1em;
 			overflow: hidden;
 			position: absolute;
 			background: rgba(0,0,0,0.9);
@@ -3142,6 +3142,72 @@ a.inline-link {
 
 
 
+	/****************************************************/
+	/* CONTACT SECTION */
+	/****************************************************/
+
+	.ctct-links {
+		text-align: center;
+	}
+	#sm-links{
+		display: inline-block;
+		margin: 2em 0;
+		padding: 0;
+	}
+	#sm-links li{
+		list-style:none;
+		float:left;
+		margin-right: 9.3%;
+		width: 18%;
+		padding: 0;
+	}
+	#sm-links li a{
+		display:block;
+		position: relative;
+	}
+
+	#sm-links li a img{
+		display: block;
+		width: 100%;
+		border-radius: 15px;
+	}
+
+	.icon-overlay {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255,255,255,0);
+		border-radius: 15px;
+		z-index: 5;
+		transition: background 0.5s;
+	}
+
+	.icon-overlay:hover {
+		cursor: pointer;
+		background-color: rgba(255,255,255,0.6);
+	}
+
+	.icon-overlay span{
+		font-size: 22px;
+		font-weight: 700;
+		color: rgba(0,0,0,0.6);
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		transition: opacity 0.5s;
+	}
+
+	.icon-overlay:hover span{
+		opacity: 1;
+	}
+
+
+
 
 
 
@@ -3162,7 +3228,7 @@ a.inline-link {
 
 		#footer footer {
 			bottom: 2em;
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.6);
 			left: 0;
 			position: absolute;
 			text-align: center;
