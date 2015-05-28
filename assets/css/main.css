@@ -2278,7 +2278,7 @@
 			ul.icons-grid li {
 				display: block;
 				float: left;
-				padding: 3em 0;
+				padding: 1.5em 0;
 				width: 50%;
 			}
 
@@ -2295,7 +2295,7 @@
 					content: '';
 					display: block;
 					height: 2px;
-					margin-top: -3em;
+					margin-top: -1.5em;
 					position: absolute;
 					width: 100%;
 				}
@@ -2845,6 +2845,186 @@ a.inline-link {
 			#title .container .button {
 				min-width: 12em;
 			}
+
+
+
+	/****************************************************/
+	/* PROJECT SECTION */
+	/****************************************************/
+		#two #project-thumbs {
+			padding: 0;
+		}
+
+		#two #project-thumbs li{
+			list-style:none;
+			float:left;
+			margin:0px 5% 5% 0px;
+			padding:0px;
+			width: 47.5%;
+		}
+		#two #project-thumbs li.last{margin-right:0px;}
+		#two #project-thumbs li.bottom{margin-bottom:0px;}
+
+		.project-container {
+			position: relative;
+			width: 100%;
+		}
+
+		#two #project-thumbs .project-img{
+			width: 100%;
+			display: block;
+			transition: all 0.5s;
+		}
+
+		ul#project-thumbs li .project-container:hover .project-img {
+			transform: scale(1.2);
+		}
+
+		ul#project-thumbs li .img-container {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.overlay {
+			visibility: hidden;
+			opacity: 0;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(255,255,255,0.8);
+			-webkit-transition: visibility 0.4s, opacity 0.4s;
+			-moz-transition: visibility 0.4s, opacity 0.4s;
+			-o-transition: visibility 0.4s, opacity 0.4s;
+			transition: visibility 0.4s, opacity 0.4s;
+		}
+
+		ul#project-thumbs li .project-container:hover .overlay {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		h2.project-title {
+			font-size: 2.5em;
+			line-height: 1em;
+			position: absolute;
+			top: 20%;
+			width: 100%;
+			margin: 0;
+			color: rgba(0,0,0,0.6);
+			opacity: 0;
+			text-align: center;
+			-webkit-transform: translateY(-40%);
+			-moz-transform: translateY(-40%);
+			-ms-transform: translateY(-40%);
+			-o-transform: translateY(-40%);
+			transform: translateY(-40%);
+
+			-webkit-transition: top 0.5s, opacity 0.5s;
+			-moz-transition: top 0.5s, opacity 0.5s;
+			-o-transition: top 0.5s, opacity 0.5s;
+			transition: top 0.5s, opacity 0.5s;
+		}
+
+		.btn-container {
+			position: absolute;
+			top: 90%;
+			width: 100%;
+			opacity: 0;
+			text-align: center;
+			-webkit-transform: translateY(-40%);
+			-moz-transform: translateY(-40%);
+			-ms-transform: translateY(-40%);
+			-o-transform: translateY(-40%);
+			transform: translateY(-40%);
+
+			-webkit-transition: top 0.5s, opacity 0.5s;
+			-moz-transition: top 0.5s, opacity 0.5s;
+			-o-transition: top 0.5s, opacity 0.5s;
+			transition: top 0.5s, opacity 0.5s;
+		}
+
+		.description-container {
+			max-height: 1px;
+			width: 100%;
+			padding: 0.6em;
+			overflow: hidden;
+			position: absolute;
+			background: rgba(0,0,0,0.9);
+			color: white;
+			opacity: 0;
+			transition: max-height 0.5s, opacity 0.5s;
+			z-index: 3;
+		}
+
+		.description-container p {
+			font-size: 14px;
+			text-align: justify;
+			margin: 0;
+			opacity: 0;
+			transition: opacity 1s;
+		}
+
+		ul#project-thumbs li .project-container:hover .description-container {
+			max-height: 50em;
+			opacity: 1;
+		}
+
+		ul#project-thumbs li .project-container:hover .description-container p {
+			opacity: 1;
+		}
+
+		ul#project-thumbs li .project-container:hover .project-title {
+			top: 30%;
+			opacity: 1;
+		}
+
+		ul#project-thumbs li .project-container:hover .btn-container {
+			top: 70%;
+			opacity: 1;
+		}
+
+		.btn-container .project-btn:nth-of-type(2) {
+			margin-left: 30px;
+		}
+
+		.project-btn {
+			font-size: 2em;
+			font-weight: 700;
+			color: rgba(0,0,0,0.6);
+			-webkit-transition: color 0.4s;
+			-moz-transition: color 0.4s;
+			-o-transition: color 0.4s;
+			transition: color 0.4s;
+		}
+
+		.project-btn:hover {
+			color: rgba(0,0,0,1);
+		}
+
+		@media screen and (max-width: 736px) {
+			h2.project-title {
+				font-size: 2em;
+			}
+			.project-btn {
+				font-size: 1.5em;
+			}
+		}
+
+
+		@media screen and (max-width: 736px) {
+			h2.project-title {
+				font-size: 1.5em;
+			}
+			.project-btn {
+				font-size: 1em;
+			}
+		}
+
+
+
 
 
 
