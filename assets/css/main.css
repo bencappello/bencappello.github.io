@@ -2258,7 +2258,7 @@
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1.5em 0 0;
+				padding: 0 3em 0 0;
 			}
 
 				ul.icons li:last-child {
@@ -2266,7 +2266,7 @@
 				}
 
 				ul.icons li .icon:before {
-					font-size: 2em;
+					font-size: 3em;
 				}
 
 		ul.icons-grid {
@@ -2742,7 +2742,7 @@
 	margin-right: 40px;
 }
 
-#one p {
+#about p {
 	text-align: left;
 }
 
@@ -2759,7 +2759,7 @@ a.inline-link {
 		margin-right: 0;
 	}
 
-	#one p {
+	#about p {
 		text-align: justify;
 	}
 }
@@ -2771,7 +2771,7 @@ a.inline-link {
 		width: 50%;
 	}
 
-	#one p {
+	#about p {
 		text-align: justify;
 	}
 }
@@ -2851,26 +2851,26 @@ a.inline-link {
 	/****************************************************/
 	/* PROJECT SECTION */
 	/****************************************************/
-		#two #project-thumbs {
+		#portfolio #project-thumbs {
 			padding: 0;
 		}
 
-		#two #project-thumbs li{
+		#portfolio #project-thumbs li{
 			list-style:none;
 			float:left;
 			margin:0px 5% 5% 0px;
 			padding:0px;
 			width: 47.5%;
 		}
-		#two #project-thumbs li.last{margin-right:0px;}
-		#two #project-thumbs li.bottom{margin-bottom:0px;}
+		#portfolio #project-thumbs li.last{margin-right:0px;}
+		#portfolio #project-thumbs li.bottom{margin-bottom:0px;}
 
 		.project-container {
 			position: relative;
 			width: 100%;
 		}
 
-		#two #project-thumbs .project-img{
+		#portfolio #project-thumbs .project-img{
 			width: 100%;
 			display: block;
 			transition: all 0.5s;
@@ -2947,15 +2947,14 @@ a.inline-link {
 		}
 
 		.description-container {
-			max-height: 1px;
+			max-height: 0px;
 			width: 100%;
-			padding: 1em;
+			padding: 0em;
 			overflow: hidden;
 			position: absolute;
 			background: rgba(0,0,0,0.9);
 			color: white;
-			opacity: 0;
-			transition: max-height 0.5s, opacity 0.5s;
+			transition: max-height 0.5s ease, padding 0.5s ease;
 			z-index: 3;
 		}
 
@@ -2969,7 +2968,8 @@ a.inline-link {
 
 		ul#project-thumbs li .project-container:hover .description-container {
 			max-height: 50em;
-			opacity: 1;
+			padding: 1em;
+			transition: max-height 0.5s ease, padding 0.3s ease;
 		}
 
 		ul#project-thumbs li .project-container:hover .description-container p {
@@ -3046,8 +3046,8 @@ a.inline-link {
 		width: 100%;
 		display: block;
 	}
-	#three .last{margin:0px;}
-	#three .bottom{margin-bottom:0px;}
+	#skills .last{margin:0px;}
+	#skills .bottom{margin-bottom:0px;}
 
 
 	@media screen and (max-width: 980px) {
@@ -3227,7 +3227,7 @@ a.inline-link {
 		}
 
 		#footer footer {
-			bottom: 2em;
+			bottom: 3em;
 			color: rgba(255, 255, 255, 0.6);
 			left: 0;
 			position: absolute;
