@@ -3071,6 +3071,18 @@ a.inline-link {
 				max-height: 10em;
 				padding: 0.5em;
 			}
+			.description-container::-webkit-scrollbar {
+			  border-radius: 0.3em;
+			  width: 0.3em;
+		  }
+		  .description-container::-webkit-scrollbar-track {
+		    background-color: rgba(255, 255, 255, .15);
+		    border-radius: 0.3em;
+		  }
+		  .description-container::-webkit-scrollbar-thumb {
+		    background-color: rgba(255,255,255,.4);
+		    border-radius: 0.3em;
+		  }
 		}
 
 
