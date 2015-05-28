@@ -108,7 +108,7 @@
 
 	#title {
 		-ms-behavior: url("assets/css/ie/backgroundsize.min.htc");
-		background-image: url("../../../images/valley.jpeg");
+		background-image: url("../../../images/backgrounds/seaside-grass.jpeg");
 		background-size: cover;
 		height: 100%;
 	}
@@ -131,7 +131,7 @@
 
 	#footer {
 		-ms-behavior: url("assets/css/ie/backgroundsize.min.htc");
-		background-image: url("../../../images/valley.jpeg");
+		background-image: url("../../../images/backgrounds/seaside-grass.jpeg");
 		background-size: cover;
 	}
 

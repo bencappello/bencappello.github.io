@@ -13,6 +13,14 @@
     });
   }();
 
+  var bindDownloadNav =  function () {
+    $(".resume-overlay").hover(function() {
+      $("#download-nav").addClass("expanded");
+    }, function() {
+      $("#download-nav").removeClass("expanded");
+    });
+  }();
+
 
 
 

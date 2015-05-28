@@ -1306,7 +1306,7 @@
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/valley.jpeg");
+		background-image: url("images/overlay.png"), url("../../images/backgrounds/seaside-grass.jpeg");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -2646,13 +2646,6 @@
 				width: calc(100% - 10px);
 			}
 
-			.content a {
-				color: rgb(111, 117, 119);
-				text-decoration: none;
-				border-bottom: 1px dashed rgb(111, 117, 119);
-
-			}
-
 		body .goto-next {
 			-moz-transition: background-color 0.2s ease-in-out;
 			-webkit-transition: background-color 0.2s ease-in-out;
@@ -2704,15 +2697,6 @@
 	padding: 0;
 }
 
-/*#logo {
-	height: 4em;
-	position: absolute;
-	top: 9.8em;
-	left: 50%;
-	transform: translateX(-50%);
-}*/
-
-
 #header.sticky-bar #main-menu {
 	padding: 1em 0;
 }
@@ -2734,13 +2718,6 @@
 	/*color: rgb(111, 117, 119);*/
 }
 
-@media screen and (max-width: 980px) {
-	#logo {
-		top: 9.7em;
-	}
-}
-
-
 @media screen and (max-width: 736px) {
 	#header #main-menu li {
 	  font-size: 0.75em;
@@ -2751,10 +2728,6 @@
 		padding: 0.75em 0;
 	}
 
-	#logo {
-		height: 2em;
-		top: 4.85em;
-	}
 }
 
 
@@ -2771,6 +2744,13 @@
 
 #one p {
 	text-align: left;
+}
+
+a.inline-link {
+	color: rgb(111, 117, 119);
+	text-decoration: none;
+	border-bottom: 1px dashed rgb(111, 117, 119);
+
 }
 
 @media screen and (max-width: 980px) {
@@ -2887,6 +2867,85 @@
 	}
 	#three .last{margin:0px;}
 	#three .bottom{margin-bottom:0px;}
+
+
+
+
+
+	/****************************************************/
+	/* RESUME SECTION */
+	/****************************************************/
+
+	.resume-container {
+		position: relative;
+		width: 800px;
+		margin-left: -47px;
+		margin-right: auto;
+	}
+	.resume-img {
+		display: block;
+		width: 100%;
+		border-radius: 10px;
+	}
+	.resume-overlay {
+		display:block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0);
+		border-radius: 10px;
+		z-index: 2;
+	}
+	#download-nav {
+		height: 0px;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		position: absolute;
+		background: rgba(0,0,0,0.6);
+		color: #B3B3B3;
+		transition: height 0.5s;
+		z-index: 99;
+	}
+
+	body #header .expanded {
+		height: 3em;
+	}
+
+	#download-nav h4 {
+		font-size: 20px;
+		margin: 0;
+		color: white;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity 1.5s;
+	}
+
+	#download-nav.expanded h4 {
+		opacity: 1;
+	}
+
+	@media screen and (max-width: 980px) {
+		.resume-container {
+			position: relative;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	@media screen and (max-width: 736px) {
+		#download-nav h4 {
+			font-size: 10px;
+		}
+		body #header .expanded {
+			height: 2em;
+		}
+	}
 
 
 
