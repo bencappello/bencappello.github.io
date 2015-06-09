@@ -3216,20 +3216,29 @@ a.inline-link {
 		padding: 0;
 	}
 
-	.ctct-container {
-		float:left;
+	.ctct-outer-box {
+		position: relative;
+		float: left;
 		width: 31.85%;
-		height: 12em;
-		padding: 2.5em 1.75em;
+		height: 14em;
 		margin-right: 2%;
 		border: 1px solid black;
 	}
 
-	.ctct-container h2 {
+	.ctct-inner-box {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.ctct-outer-box h2 {
 		font-size: 1.5em;
 	}
 
-	.ctct-container h2:after {
+	.ctct-outer-box h2:after {
 		background: #dddddd;
 		content: '';
 		display: block;
@@ -3243,7 +3252,7 @@ a.inline-link {
 		margin: 0;
 	}
 
-	.ctct-container a {
+	.ctct-outer-box a {
 		color: rgb(111, 117, 119);
 		font-size: 0.9em;
 	}
@@ -3256,50 +3265,51 @@ a.inline-link {
 
 
 	@media screen and (max-width: 980px) {
-		.ctct-container {
+		.ctct-outer-box {
 			height: 12em;
 			margin-right: 1%;
 			padding: 2em 1.5em;
 			border: 1px solid black;
 		}
 
-		.ctct-container h2 {
+		.ctct-outer-box h2 {
 			font-size: 1.3em;
 		}
 
-		.ctct-container a {
+		.ctct-outer-box a {
 			color: rgb(111, 117, 119);
 			font-size: 0.8em;
 		}
 	}
 	@media screen and (max-width: 736px) {
-		.ctct-container {
+		.ctct-outer-box {
 			height: 8em;
 			padding: 1.5em 1.2em;
 			border: 1px solid black;
 		}
 
-		.ctct-container h2 {
+		.ctct-outer-box h2 {
 			font-size: 0.7em;
 		}
 
-		.ctct-container a {
+		.ctct-outer-box a {
 			color: rgb(111, 117, 119);
 			font-size: 0.4em;
+			line-height: 0.3em;
 		}
 	}
 	@media screen and (max-width: 480px) {
-		.ctct-container {
+		.ctct-outer-box {
 			height: 7em;
 			padding: 1.2em 0.9em;
 			border: 1px solid black;
 		}
 
-		.ctct-container h2 {
+		.ctct-outer-box h2 {
 			font-size: 0.6em;
 		}
 
-		.ctct-container a {
+		.ctct-outer-box a {
 			color: rgb(111, 117, 119);
 			font-size: 0.3em;
 			line-height: 0.3em;
