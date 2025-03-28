@@ -1,3 +1,3 @@
 # Portfolio Site
 
-##### [bencappello.com](http://bencappello.com).
+##### [bencappello.com](http://bencappello.com)
